@@ -41,8 +41,7 @@ export default function Catalog() {
     if (!filtersLoaded) dispatch(fetchFilters());
   }, [dispatch, filtersLoaded]);
 
-  if (!filtersLoaded)
-    return <LoadingComponent message="Loading products..." />;
+  if (!filtersLoaded) return <LoadingComponent message="Loading products..." />;
 
   return (
     <Grid container columnSpacing={4}>
