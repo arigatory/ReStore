@@ -1,7 +1,7 @@
 import { Grid } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import BasketTable from '../basket/BasketTable';
-import BasketSummary from '../basket/BusketSummary';
+import BasketSummary from '../basket/BasketSummary';
 import { useAppSelector } from '../../app/store/configureStore';
 
 export default function Review() {

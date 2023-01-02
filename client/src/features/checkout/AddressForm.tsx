@@ -39,6 +39,7 @@ export default function AddressForm() {
             disabled={!formState.isDirty}
             name="saveAddress"
             label="Save this as the default address"
+            control={control}
           />
         </Grid>
       </Grid>

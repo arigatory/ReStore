@@ -64,7 +64,7 @@ export default function CheckoutPage() {
       setLoading(true);
       try {
         const orderNumber = await agent.Orders.create({
-          saveAddres: saveAddress,
+          saveAddress,
           shippingAddress,
         });
         setOrderNumber(orderNumber);

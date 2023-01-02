@@ -1,7 +1,7 @@
 import { Button, Grid, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { useAppSelector } from '../../app/store/configureStore';
-import BasketSummary from './BusketSummary';
+import BasketSummary from './BasketSummary';
 import BasketTable from './BasketTable';
 
 export default function BasketPage() {

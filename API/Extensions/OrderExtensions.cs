@@ -13,6 +13,7 @@ public static class OrderExtensions
         {
             Id = order.Id,
             BuyerId = order.BuyerId,
+            OrderDate = order.OrderDate,
             ShippingAddress = order.ShippingAddress,
             DeliveryFee = order.DeliveryFee,
             Subtotal = order.Subtotal,
