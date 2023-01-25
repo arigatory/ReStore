@@ -5,10 +5,11 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import { useFormContext } from 'react-hook-form';
 import AppTextInput from '../../app/components/AppTextInput';
+import { CardNumberElement } from '@stripe/react-stripe-js';
 
 export default function PaymentForm() {
   const { control } = useFormContext();
-  
+
   return (
     <>
       <Typography variant="h6" gutterBottom>
@@ -16,7 +17,11 @@ export default function PaymentForm() {
       </Typography>
       <Grid container spacing={3}>
         <Grid item xs={12} md={6}>
-          <AppTextInput name='nameOnCard' label='Name on card' control={control} />
+          <AppTextInput
+            name="nameOnCard"
+            label="Name on card"
+            control={control}
+          />
         </Grid>
         <Grid item xs={12} md={6}>
           <TextField
@@ -26,6 +31,10 @@ export default function PaymentForm() {
             fullWidth
             autoComplete="cc-number"
             variant="standard"
+            InputLabelProps={{ shrink: true }}
+            InputProps={{
+              inputComponent: CardNumberElement,
+            }}
           />
         </Grid>
         <Grid item xs={12} md={6}>
@@ -40,7 +49,6 @@ export default function PaymentForm() {
         </Grid>
         <Grid item xs={12} md={6}>
           <TextField
-            // required
             id="cvv"
             label="CVV"
             helperText="Last three digits on signature strip"
