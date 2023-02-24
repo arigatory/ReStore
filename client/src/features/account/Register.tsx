@@ -72,7 +72,7 @@ export default function Register() {
           autoFocus
           {...register('username', { required: 'Username is required' })}
           error={!!errors.username}
-          helperText={errors?.username?.message?.toString()}
+          helperText={errors?.password?.message as string}
         />
         <TextField
           margin="normal"
