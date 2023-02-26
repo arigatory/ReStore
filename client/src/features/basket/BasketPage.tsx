@@ -19,7 +19,7 @@ export default function BasketPage() {
           <BasketSummary />
           <Button
             component={Link}
-            to="checkout"
+            to="/checkout"
             variant="contained"
             size="large"
             fullWidth

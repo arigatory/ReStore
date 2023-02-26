@@ -24,7 +24,6 @@ import {
   useElements,
   useStripe,
 } from '@stripe/react-stripe-js';
-import { AnyObjectSchema } from 'yup';
 
 const steps = ['Shipping address', 'Review your order', 'Payment details'];
 
